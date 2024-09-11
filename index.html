@@ -12,15 +12,16 @@
         <div class="header-container">
             <h1 class="h1Container">Todos juntos contra as drogas</h1>
                
-            <div class="search">
-                <img src="imagens/search-521.png" alt="search">
-                <input type="text" id="search" oninput="search()" placeholder="Pesquisa">
+            <div class="direitaHeader">
+                <div class="search">
+                    <img src="imagens/search-521.png" alt="search">
+                    <input type="text" id="search" oninput="search()" placeholder="Pesquisa">
+                </div>
+                <a id="cart-link">
+                    <img src="imagens/logo.png" alt="proerd" class="imgProerd">
+                </a>
             </div>
-                
         </div>
-        <a href="proerd.html" id="cart-link">
-            <img src="imagens/logo.png" alt="proerd" class="imgProerd">
-        </a>
     </header>
     <div class="sub-header">
         <h1>Vamos juntos para mudar o futuro</h1>
@@ -64,13 +65,25 @@
                 <p>
                     A cocaína é um estimulante potente que causa euforia e aumento de energia, mas pode levar a graves problemas de saúde e dependência. É ilegal na maioria dos países e seu uso tem impactos sociais e legais significativos.
                 </p>
-                <input type="button" value="SaibaMais">
+                <input type="button" value="SaibaMais" class="cocainaButtonSM">
             </div>
             <div class="vapeButton">
-            
+                <h2>
+                    Vape
+                </h2>
+                <p>
+                    A cocaína é um estimulante potente que causa euforia e aumento de energia, mas pode levar a graves problemas de saúde e dependência. É ilegal na maioria dos países e seu uso tem impactos sociais e legais significativos.
+                </p>
+                <input type="button" value="SaibaMais" class="vapeButtonSM">
             </div>
             <div class="maconhaButton">
-            
+                <h2>
+                    Maconha
+                </h2>
+                <p>
+                    A maconha é uma droga psicoativa derivada da planta Cannabis. Seu uso provoca efeitos como euforia, relaxamento e alterações sensoriais, mas pode levar a problemas de saúde, especialmente com o uso prolongado. Apesar de ser legalizada em alguns lugares, ainda é ilegal em muitas regiões, e seu uso envolve debates sociais e legais significativos.
+                </p>     
+                <input type="button" value="SaibaMais" class="maconhaButtonSM">           
             </div>
         </div>
     </section>
@@ -81,6 +94,69 @@
         <span id="contador">0</span>
     </section>
     
+    <div id="modalBackground" class="modal-background" style="display: none;">
+        <div class="modal-content-cocaina" style="display: none;">
+            <h2>Cocaína</h2>
+            <span>Sobre:</span> A cocaína é um potente estimulante que causa euforia e pode levar a dependência e graves problemas de saúde. É ilegal na maioria dos países e seu uso tem impactos sociais e legais significativos.
+            </p>
+            <br>
+            <p><span>Impacto Social:</span> O uso de cocaína pode aumentar a violência e a criminalidade, prejudicando a segurança e a qualidade de vida.
+            </p>
+            <br>
+            <p>
+              <span>Impacto Econômico:</span> O tratamento da dependência e os cuidados de saúde geram altos custos para o sistema público e causam perda de produtividade.
+            </p>
+            <br>
+            <p>
+              <span>Saúde Mental:</span> A cocaína pode afetar negativamente a saúde mental, causando problemas de memória, concentração e aumentando o risco de transtornos mentais.
+            </p>
+            <br>
+            <p>
+              <span>Efeitos do Uso:</span> A curto prazo, a cocaína pode causar aumento da frequência cardíaca e paranoia. A longo prazo, leva a dependência, danos cerebrais e problemas cardíacos, além de afetar a saúde mental.
+            </p>            
+        </div>
+        <div class="modal-content-vape" style="display: none;">
+            <h2>Vape</h2>
+            <span>Sobre:</span> O vape é um dispositivo que aquece líquido para gerar vapor, usado como alternativa ao cigarro. Apesar de ser promovido como menos prejudicial, pode causar dependência e problemas de saúde, especialmente entre jovens.
+            </p>
+            <br>
+            <p><span>Impacto Social:</span> O uso do vape por adolescentes preocupa, pois normaliza o vício em nicotina e pode levar a problemas de saúde pública.
+            </p>
+            <br>
+            <p>
+              <span>Impacto Econômico:</span> A indústria do vape movimenta bilhões, mas o tratamento de doenças relacionadas ao seu uso gera custos para o sistema de saúde.
+            </p>
+            <br>
+            <p>
+              <span>Saúde Mental:</span> A nicotina no vape pode agravar ansiedade, depressão e causar dependência psicológica.
+            </p>
+            <br>
+            <p>
+              <span>Efeitos do Uso:</span> O vape pode causar irritação pulmonar, aumento da frequência cardíaca e dependência de nicotina, além de possíveis problemas respiratórios e cardíacos a longo prazo.
+            </p>                     
+          </div>
+          <div class="modal-content-maconha" style="display: none;">
+            <h2>Maconha</h2>
+            <span>Sobre:</span> A maconha vem da planta Cannabis e é usada tanto recreativamente quanto medicinalmente. Embora legal em alguns lugares, seu uso contínuo pode causar dependência e problemas de saúde.
+            </p>
+            <br>
+            <p><span>Impacto Social:</span> O uso recreativo da maconha é discutido em muitas sociedades, podendo afetar a produtividade e a saúde pública. Em lugares legalizados, há debates sobre a redução do tráfico de drogas.
+            </p>
+            <br>
+            <p>
+              <span>Impacto Econômico:</span> A legalização gera receitas por meio de impostos, mas o custo de saúde relacionado ao uso frequente e dependência é uma preocupação.
+            </p>
+            <br>
+            <p>
+              <span>Saúde Mental:</span> A maconha pode aliviar ansiedade e dor, mas também pode causar paranoia e prejudicar a memória, especialmente em usuários jovens.
+            </p>
+            <br>
+            <p>
+              <span>Efeitos do Uso:</span> A curto prazo, causa euforia e aumento da frequência cardíaca. A longo prazo, pode levar a problemas respiratórios e dependência, afetando o cérebro e a saúde mental.
+            </p>                       
+          </div>
+      </div>
+
     <script src="main.js"></script>
 </body>
 </html>
