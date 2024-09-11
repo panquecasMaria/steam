@@ -22,20 +22,21 @@
         background: linear-gradient(135deg, #2c3e50, #0d151d);
         color: #ffffff;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .direitaHeader{
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        justify-content: right;
     }
 
     .imgProerd{
-        width: 10vw;
-        height: 10vh;
+        width: 20vw;
+        height: 20vh;
         padding-top: 10px;
     }
 
@@ -204,7 +205,7 @@
 
     .h1Container{
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
@@ -214,10 +215,6 @@
         align-items: center;
         margin: 0 auto;
         padding: 0 10px 0 10px;
-    }
-
-    .search{
-        margin: 0 0 0 100px;
     }
 
     .sub-header{
@@ -362,42 +359,64 @@
     }
 }
 
-@media only screen and (min-width: 651px){
+@media only screen and (min-width: 651px) and (max-width: 1280px){
     @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
     * {
         margin: 0;
-        /* Espaçamento externo */
         padding: 0;
-        /* Espaçamento Interno */
         box-sizing: border-box;
         text-decoration: none;
-        /* Tirar linha em baixo de todos os elementos */
         list-style: none;
     }
 
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8vh;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
 
-    /* Estilos básicos para o header e layout */
+    .h1Container {
+        margin: 0;
+        color: white;
+    }
+
+
     body {
         font-family: "SUSE", sans-serif;
         background-color: #d6d0d0;
     }
 
     header {
-        background: linear-gradient(135deg, #2c3e50, #0d151d);
-        color: #ffffff;
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #2c3e50, #0d151d)
     }
+
+    .h1EZContainer {
+        flex: 1;
+        text-align: center;
+        padding-left: 280px;
+    }
+
 
     .direitaHeader{
         display: flex;
         align-items: center;
-        justify-content: right;
     }
 
-    .imgProerd{
-        width: 6.5vw;
-        height: 16vh;
+    #cart-link img {
+        width: 10vh;
+        height: auto;
     }
 
     .section2 {
@@ -564,13 +583,8 @@
     .header-container {
         display: flex;
         align-items: center;
-        margin: 0 auto;
-        padding: 0 10px 0 10px;
     }
 
-    .search{
-        margin: 0 0 0 100px;
-    }
 
     .sub-header{
         background: linear-gradient(135deg, #2c3e50, #0d151d);
@@ -591,12 +605,18 @@
         border: 1px solid #ddd;
     }
 
-    .search img{
-        margin-left: 20px;
-        margin-top: 10px;
-        width: 15px;
-        height: 15px;
+    .search {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
     }
+
+    .search img {
+        margin-right: 5px;
+        width: 1vw;
+        height: 2vh;
+    }
+
 
     #logo {
         display: flex;
@@ -606,7 +626,378 @@
 
     #logo img {
         margin-left: 20px;
-        margin-right: 0px;
+        margin-right: 0;
+        width: 90px;
+        height: 100px;
+    }
+
+    .text p{
+        display: flex;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .section{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap: 180px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: center;
+    }
+
+    #esquerdaTexto{
+        text-align: center;
+        width: 40%;
+    }
+
+    #direitaTexto{
+        text-align: center;
+        width: 40%;
+    }
+
+    .modal-background {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .modal-content-cocaina {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .modal-content-cocaina h2{
+        text-align: center;
+    }
+
+    .modal-content-cocaina span{
+        font-weight: bold;
+    }
+
+    .modal-content-vape {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .modal-content-vape h2{
+        text-align: center;
+    }
+
+    .modal-content-vape span{
+        font-weight: bold;
+    }
+
+    
+    .modal-content-maconha {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .modal-content-maconha h2{
+        text-align: center;
+    }
+
+    .modal-content-maconha span{
+        font-weight  : bold;
+    }
+    
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1281px){
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8vh;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .h1Container {
+        margin: 0;
+        color: white;
+    }
+
+
+    body {
+        font-family: "SUSE", sans-serif;
+        background-color: #d6d0d0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #2c3e50, #0d151d)
+    }
+
+    .h1EZContainer {
+        flex: 1;
+        text-align: center;
+        padding-left: 320px;
+    }
+
+
+    .direitaHeader{
+        display: flex;
+        align-items: center;
+    }
+
+    #cart-link img {
+        width: 10vh;
+        height: auto;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 22vh;
+        margin-top: 80px;
+    }
+
+    .section2 h1{
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        gap: 90px;
+        justify-content: center;
+    }
+
+    .cocainaButton{
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-image: url(imagens/cocaina.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cocainaButton h2{
+        text-align: center;
+        align-items: center;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .cocainaButton p{
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+    }
+
+    .cocainaButton input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    .vapeButton{
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-image: url(imagens/vape.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vapeButton h2{
+        text-align: center;
+        align-items: center;
+        color: white;
+        border-radius: 10px;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .vapeButton p{
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+    }
+
+    .vapeButton input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    .maconhaButton{
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-image: url(imagens/transferir.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .maconhaButton h2{
+        text-align: center;
+        align-items: center;
+        color: white;
+        border-radius: 10px;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .maconhaButton p{
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+    }
+
+    .maconhaButton input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    #contador{
+        padding-top: 0;
+        font-size: 50px;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .sub-header{
+        background: linear-gradient(135deg, #2c3e50, #0d151d);
+        height: 10vh;
+        font-size: 14px;
+        color: #ffffff;
+        width: auto;
+        text-align: center;
+    }
+    .sub-header h1{
+        padding-top: 10px;
+    }
+
+    .search input {
+        padding: 3px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .search img {
+        margin-right: 5px;
+        width: 1vw;
+        height: 2vh;
+    }
+
+
+    #logo {
+        display: flex;
+        align-items: center;
+    
+    }
+
+    #logo img {
+        margin-left: 20px;
+        margin-right: 0;
         width: 90px;
         height: 100px;
     }
