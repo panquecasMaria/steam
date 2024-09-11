@@ -2,17 +2,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
     * {
         margin: 0;
-        /* Espaçamento externo */
         padding: 0;
-        /* Espaçamento Interno */
         box-sizing: border-box;
         text-decoration: none;
-        /* Tirar linha em baixo de todos os elementos */
         list-style: none;
     }
 
-
-    /* Estilos básicos para o header e layout */
     body {
         font-family: "SUSE", sans-serif;
         background-color: #d6d0d0;
@@ -303,7 +298,7 @@
         background-color: white;
         padding: 20px;
         border-radius: 8px;
-        width: 400px;
+        width: 300px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: left;
     }
@@ -314,6 +309,11 @@
 
     .modal-content-heroina span{
         font-weight  : bold;
+        font-size: 15px;
+    }
+
+    .modal-content-heroina p{
+        font-size: 13px;
     }
     
     .close {
