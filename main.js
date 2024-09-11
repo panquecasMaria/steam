@@ -7,7 +7,10 @@ const saibaMaisBtn = document.querySelector('.cocainaButtonSM');
 const saibaMaisBtn2 = document.querySelector(".vapeButtonSM");
 const saibaMaisBtn3 = document.querySelector('.maconhaButtonSM');
 const saibaMaisBtn4 = document.querySelector('.heroinaButtonSM');
-const closeModal = document.getElementById('closeModal');
+const closeModal = document.querySelector('#closeModal');
+const closeModal1 = document.querySelector('#closeModal1');
+const closeModal2 = document.querySelector('#closeModal2');
+const closeModal3 = document.querySelector('#closeModal3');
 let contado = 15690;
 const tempoUp = 2000;
 
@@ -19,6 +22,22 @@ function updateContador() {
 updateContador();
 
 setInterval(updateContador, tempoUp);
+
+closeModal.addEventListener('click', function() {
+  modalBackground.style.display = 'none'; // Esconde o modal
+});
+
+closeModal1.addEventListener('click', function() {
+  modalBackground.style.display = 'none'; // Esconde o modal
+});
+
+closeModal2.addEventListener('click', function() {
+  modalBackground.style.display = 'none'; // Esconde o modal
+});
+
+closeModal3.addEventListener('click', function() {
+  modalBackground.style.display = 'none'; // Esconde o modal
+});
 
 saibaMaisBtn.addEventListener('click', function() {
     modalBackground.style.display = 'flex';
