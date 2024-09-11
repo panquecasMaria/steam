@@ -55,146 +55,94 @@
     }
 
     .section3 {
+        background-color: #d6d0d0; 
+        padding: 20px;
+        margin: 20px 0;
         display: flex;
         flex-direction: column;
-        padding-top: 25px;
+        justify-content: center;
+        text-align: center;
         align-items: center;
     }
 
-    .buttons{
+    .buttons {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        width: 80%;
-        gap: 90px;
-        justify-content: center;
+        gap: 100px;
     }
 
-    .cocainaButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/cocaina.jfif);
-        background-repeat: no-repeat;
+    .cocainaButton {
+        background-image: url(imagens/cocaina.jpg);
+        border: 1px solid #ddd; 
         background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cocainaButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-    }
-
-    .cocainaButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
-    }
-
-    .cocainaButton input{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 6px;
-    }
-
-    .vapeButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/vape.jfif);
         background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .vapeButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-    }
-
-    .vapeButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
-    }
-
-    .vapeButton input{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 6px;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 77vw; 
     }
 
     .maconhaButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/transferir.jfif);
-        background-repeat: no-repeat;
+        background-image: url(imagens/transferir.jpg);
+        border: 1px solid #ddd; 
         background-size: cover;
-        align-items: center;
-        justify-content: center;
+        background-position-x: -60px;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px;
     }
 
-    .maconhaButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
+    .vapeButton{
+        background-image: url(imagens/vape.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px; 
     }
 
-    .maconhaButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
+    .heroinaButton {
+        background-image: url(imagens/transferir2.jpg);
+        background-size: cover;
+        background-position-x: -50px;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px; 
     }
 
-    .maconhaButton input{
-        margin-top: 20px;
+    .cocainaButton h2, .vapeButton h2, .maconhaButton h2 , .heroinaButton h2{
+        font-size: 1.5em;
         margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
+        color: white;
+    }
+
+    .cocainaButton p, .vapeButton p, .maconhaButton p, .heroinaButton p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: white;
+    }
+
+    .cocainaButtonSM, .vapeButtonSM, .maconhaButtonSM, .heroinaButtonSM {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
         cursor: pointer;
-        padding: 6px;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .cocainaButtonSM:hover, .vapeButtonSM:hover, .maconhaButtonSM:hover, .heroinaButtonSM:hover {
+        background-color: #0056b3;
     }
 
     #contador{
@@ -279,6 +227,7 @@
     #esquerdaTexto{
         text-align: center;
         width: 80%;
+        z-index: 2;
     }
 
     #direitaTexto{
@@ -348,6 +297,23 @@
 
     .modal-content-maconha span{
         font-weight: bold;
+    }
+
+    .modal-content-heroina {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .modal-content-heroina h2{
+        text-align: center;
+    }
+
+    .modal-content-heroina span{
+        font-weight  : bold;
     }
     
     .close {
@@ -439,140 +405,93 @@
         padding-top: 25px;
     }
 
-    .buttons{
+    .section3 {
+        background-color: #d6d0d0; 
+        padding: 20px;
+        margin: 20px 0;
         display: flex;
-        flex-direction: row;
-        width: 100vw;
-        gap: 90px;
         justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
-    .cocainaButton{
-        border: 1px solid black;
-        border-radius: 10px;
+    .buttons {
         display: flex;
-        flex-direction: column;
-        background-image: url(imagens/cocaina.jfif);
-        background-repeat: no-repeat;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .cocainaButton {
+        background-image: url(imagens/cocaina.jpg);
+        border: 1px solid #ddd; 
         background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cocainaButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-    }
-
-    .cocainaButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
-    }
-
-    .cocainaButton input{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 6px;
-    }
-
-    .vapeButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/vape.jfif);
         background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .vapeButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-    }
-
-    .vapeButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
-    }
-
-    .vapeButton input{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 6px;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 20vw; 
     }
 
     .maconhaButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/transferir.jfif);
-        background-repeat: no-repeat;
+        background-image: url(imagens/transferir.jpg);
+        border: 1px solid #ddd; 
         background-size: cover;
-        align-items: center;
-        justify-content: center;
+        background-position-x: -60px;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px;
     }
 
-    .maconhaButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
+    .vapeButton{
+        background-image: url(imagens/vape.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px; 
     }
 
-    .maconhaButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
+    .heroinaButton {
+        background-image: url(imagens/transferir2.jpg);
+        background-size: cover;
+        background-position-x: -50px;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px; 
     }
 
-    .maconhaButton input{
-        margin-top: 20px;
+    .cocainaButton h2, .vapeButton h2, .maconhaButton h2 , .heroinaButton h2{
+        font-size: 1.5em;
         margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
+        color: white;
+    }
+
+    .cocainaButton p, .vapeButton p, .maconhaButton p, .heroinaButton p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: white;
+    }
+
+    .cocainaButtonSM, .vapeButtonSM, .maconhaButtonSM, .heroinaButtonSM {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
         cursor: pointer;
-        padding: 6px;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .cocainaButtonSM:hover, .vapeButtonSM:hover, .maconhaButtonSM:hover, .heroinaButtonSM:hover {
+        background-color: #0056b3;
     }
 
     #contador{
@@ -720,6 +639,23 @@
     .modal-content-maconha span{
         font-weight  : bold;
     }
+
+    .modal-content-heroina {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .modal-content-heroina h2{
+        text-align: center;
+    }
+
+    .modal-content-heroina span{
+        font-weight  : bold;
+    }
     
     .close {
         position: absolute;
@@ -781,7 +717,7 @@
 
 
     .direitaHeader{
-        display: flex;
+        display: fle0x;
         align-items: center;
     }
 
@@ -805,145 +741,92 @@
     }
 
     .section3 {
+        background-color: #d6d0d0; 
+        padding: 20px;
+        margin: 20px 0;
         display: flex;
-        flex-direction: row;
-        padding-top: 25px;
-    }
-
-    .buttons{
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        gap: 90px;
         justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
-    .cocainaButton{
-        border: 1px solid black;
-        border-radius: 10px;
+    .buttons {
         display: flex;
-        flex-direction: column;
-        background-image: url(imagens/cocaina.jfif);
-        background-repeat: no-repeat;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .cocainaButton {
+        background-image: url(imagens/cocaina.jpg);
+        border: 1px solid #ddd; 
         background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cocainaButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-    }
-
-    .cocainaButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
-    }
-
-    .cocainaButton input{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 6px;
-    }
-
-    .vapeButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/vape.jfif);
         background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .vapeButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-    }
-
-    .vapeButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
-    }
-
-    .vapeButton input{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 6px;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 20vw; 
     }
 
     .maconhaButton{
-        border: 1px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        background-image: url(imagens/transferir.jfif);
-        background-repeat: no-repeat;
+        background-image: url(imagens/transferir.jpg);
+        border: 1px solid #ddd; 
         background-size: cover;
-        align-items: center;
-        justify-content: center;
+        background-position-x: -60px;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px;
     }
 
-    .maconhaButton h2{
-        text-align: center;
-        align-items: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
+    .vapeButton{
+        background-image: url(imagens/vape.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px; 
     }
 
-    .maconhaButton p{
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
-        width: 20vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 10px 0 10px;
+    .heroinaButton {
+        background-image: url(imagens/transferir2.jpg);
+        background-size: cover;
+        background-position-x: -50px;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        width: 300px; 
     }
 
-    .maconhaButton input{
-        margin-top: 20px;
+    .cocainaButton h2, .vapeButton h2, .maconhaButton h2 , .heroinaButton h2{
+        font-size: 1.5em;
         margin-bottom: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
+        color: white;
+    }
+
+    .cocainaButton p, .vapeButton p, .maconhaButton p, .heroinaButton p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: white;
+    }
+
+    .cocainaButtonSM, .vapeButtonSM, .maconhaButtonSM, .heroinaButtonSM {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
         cursor: pointer;
-        padding: 6px;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .cocainaButtonSM:hover, .vapeButtonSM:hover, .maconhaButtonSM:hover, .heroinaButtonSM:hover {
+        background-color: #0056b3;
     }
 
     #contador{
@@ -1089,6 +972,23 @@
     }
 
     .modal-content-maconha span{
+        font-weight  : bold;
+    }
+
+    .modal-content-heroina {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .modal-content-heroina h2{
+        text-align: center;
+    }
+
+    .modal-content-heroina span{
         font-weight  : bold;
     }
     
