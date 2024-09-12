@@ -33,6 +33,7 @@
         width: 20vw;
         height: 20vh;
         padding-top: 10px;
+        cursor: pointer;
     }
 
     .section2 {
@@ -187,6 +188,7 @@
         margin-top: 10px;
         width: 15px;
         height: 15px;
+        cursor: pointer;
     }
 
     #logo {
@@ -315,14 +317,14 @@
     .modal-content-heroina p{
         font-size: 13px;
     }
-    
+
     .close {
         font-size: 24px;
         cursor: pointer;
     }
 }
 
-@media only screen and (min-width: 651px) and (max-width: 1280px){
+@media only screen and (min-width: 651px) and (max-width: 1366px){
     @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
     * {
         margin: 0;
@@ -390,6 +392,10 @@
         margin-top: 80px;
     }
 
+    .imgProerd{
+        cursor: pointer;
+    }
+
     .section2 h1{
         text-align: center;
         font-size: 50px;
@@ -433,7 +439,7 @@
         background-image: url(imagens/transferir.jpg);
         border: 1px solid #ddd; 
         background-size: cover;
-        background-position-x: -60px;
+        background-position-x: -160px;
         background-repeat: no-repeat;
         border-radius: 8px;
         padding: 20px;
@@ -450,6 +456,7 @@
         padding: 20px;
         flex: 1;
         width: 300px; 
+        background-position-x: -150px;
     }
 
     .heroinaButton {
@@ -467,13 +474,13 @@
     .cocainaButton h2, .vapeButton h2, .maconhaButton h2 , .heroinaButton h2{
         font-size: 1.5em;
         margin-bottom: 10px;
-        color: white;
+        color: rgb(109, 98, 98);
     }
 
     .cocainaButton p, .vapeButton p, .maconhaButton p, .heroinaButton p {
         font-size: 1em;
         line-height: 1.6;
-        color: white;
+        color: rgb(109, 98, 98);
     }
 
     .cocainaButtonSM, .vapeButtonSM, .maconhaButtonSM, .heroinaButtonSM {
@@ -531,6 +538,7 @@
         margin-right: 5px;
         width: 1vw;
         height: 2vh;
+        cursor: pointer;
     }
 
 
@@ -653,6 +661,12 @@
     .modal-content-heroina span{
         font-weight  : bold;
     }
+
+    .modal-content-bobbymarley{
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    
     
     .close {
         font-size: 24px;
@@ -660,7 +674,7 @@
     }
 }
 
-@media only screen and (min-width: 1281px){
+@media only screen and (min-width: 1367px){
     @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
     * {
         margin: 0;
@@ -673,6 +687,10 @@
     ::-webkit-scrollbar {
         width: 8px;
         height: 8vh;
+    }
+
+    .imgProerd{
+        cursor: pointer;
     }
     
     ::-webkit-scrollbar-thumb {
@@ -863,6 +881,7 @@
         margin-right: 5px;
         width: 1vw;
         height: 2vh;
+        cursor: pointer;
     }
 
 
