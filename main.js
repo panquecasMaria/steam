@@ -32,22 +32,9 @@ function updateContador() {
     document.querySelector("#contador").innerText = contado;
 }
 
-function jumpscare() {
-  const searchValue = input.value.trim().toLowerCase();
-  if (searchValue === "1987") {
-    const audio = new Audio("audios/Jumpscaregoldenfreddysunfnafone_[cut_15sec].mp3");
-    audio.play();
-    modalBackground2.style.display = "flex";
-    modalBackgroundJumpScare.style.display = 'block';
-  } else {
-    modalBackground2.style.display = "none";
-    modalBackgroundJumpScare.style.display = 'none';
-  }
-}
-
 function maconha() {
   const searchValue = input.value.trim().toLowerCase();
-  if (searchValue === "maconha") {
+  if (searchValue === "canabis") {
     const audio = new Audio("audios/BobMarley-IsThisLove(Official Music Video)_[cut_224sec].mp3");
     audio.play();
     modalBackground3.style.display = "flex";
@@ -58,63 +45,17 @@ function maconha() {
   }
 }
 
-function vape() {
+function jogodoDino(){
   const searchValue = input.value.trim().toLowerCase();
-  if (searchValue === "vape") {
-    modalBackground6.style.display = "flex";
-    modalBackgroundPendrive.style.display = 'block';
+  if (searchValue === "jogo do dino") {
+    
   } else {
-    modalBackground6.style.display = "none";
-    modalBackgroundPendrive.style.display = 'none';
-  }
-}
-
-function heroina() {
-  const searchValue = input.value.trim().toLowerCase();
-  if (searchValue === "heroina") {
-    const audio = new Audio("audios/Sia-Unstoppable(OfficialVideo-LivefromtheNostalgicForThePresent Tour)_[cut_210sec].mp3");
-    audio.play();
-    modalBackground4.style.display = "flex";
-    modalBackgroundmm.style.display = 'block';
-  } else {
-    modalBackground4.style.display = "none";
-    modalBackgroundmm.style.display = 'none';
-  }
-}
-
-function cocaina() {
-  const searchValue = input.value.trim().toLowerCase();
-  if (searchValue === "cocaina") {
-    const audio = new Audio("audios/Coca-Cola Brasil _ Escolhas_[cut_30sec].mp3");
-    audio.play();
-    modalBackground5.style.display = "flex";
-    modalBackgroundcc.style.display = 'block';
-  } else {
-    modalBackground5.style.display = "none";
-    modalBackgroundcc.style.display = 'none';
-  }
-}
-
-function sukuna() {
-  const searchValue = input.value.trim().toLowerCase();
-  if (searchValue === "sukuna") {
-    const audio = new Audio("audios/COMERCIALAMOEBAVINTAGE_[cut_30sec].mp3");
-    audio.play();
-    modalBackground7.style.display = "flex";
-    modalBackgroundSukuna.style.display = 'block';
-  } else {
-    modalBackground7.style.display = "none";
-    modalBackgroundSukuna.style.display = 'none';
+    console.log('no dino')
   }
 }
 
 document.querySelector(".imgSearch").addEventListener("click", function() {
-  jumpscare();
   maconha();
-  heroina();
-  vape();
-  cocaina();
-  sukuna();
 });
 
 updateContador();
